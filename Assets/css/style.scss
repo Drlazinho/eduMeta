@@ -41,11 +41,30 @@ html{
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
+  background: #9f6fe7;
 }
 
 span{
   font-weight: bold;
   color: $base-color-secundary;
+}
+
+section {
+  padding: 2rem 2.5rem;
+  padding-top: 7.5rem;
+}
+
+
+h2{
+  font-size: 3rem;
+  color: $text-light;
+  text-shadow: black 0.1rem 0.1rem 0.1rem;
+  margin-bottom: 3rem;
+}
+
+
+p{
+  font-size: 2rem;
 }
 
 
@@ -61,6 +80,7 @@ header{
   width: 100vw;
   position: fixed;
   top: 0;
+  bottom: 0;
   z-index: 1000;
 
   .container{
@@ -111,7 +131,7 @@ header{
 
 .home{
   padding:0;
-  margin-top: 7rem;
+  padding-top: 7rem;
 
   .slide{
     min-height: 70vh;
@@ -125,7 +145,7 @@ header{
       width: 60rem;
       padding-left: 5rem;
 
-      .title{
+      .phrase{
         font-size: 4rem;
         color: $text-light;
         text-shadow: black 0.1em 0.1em 0.2em
@@ -140,6 +160,32 @@ header{
   &.swiper-pagination-bullet-active{
     background: $base-color-secundary;
   }
+}
+
+/**********************************************/
+/**                  About                   **/
+/********************************************/
+
+#about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  .content{
+    text-align: justify;
+  }
+
+  img{
+    text-align: center;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    width: 40%;
+  }
+}
+
+
+#example{
+  background: chocolate;
 }
 
 /*******************************/
@@ -166,5 +212,15 @@ header{
   }
   #menu-btn{
     display: inline-block; //visibility não funciona
+  }
+
+  #about{
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+      margin: auto;
+      width: 60%;
+    }
   }
 }
