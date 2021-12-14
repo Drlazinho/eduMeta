@@ -26,3 +26,20 @@ var swiper = new Swiper('.home-slider', {
     clickable: true,
   }
 });
+
+var swiper = new Swiper(".mySwiper", {
+  speed: 3000,
+  loop: true,
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});

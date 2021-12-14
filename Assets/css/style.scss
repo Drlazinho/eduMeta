@@ -244,13 +244,70 @@ header{
         padding: 2.5rem 2rem;
       }
     }
-  }  
+  }
+  
+  .environment{
+    background: $background-section;
+    margin: 2rem 0;
+    padding: 2rem 6rem;
+    display: flex;
+    border-radius: 1.5rem;
+    text-align: center;
+    gap: 4rem;
+
+    .swiper {
+      padding: 2rem;
+      width: 30rem;
+      height: 30rem;
+    }
+
+    .swiper-slide {
+      background-position: center  !important;
+      background-size: cover !important;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+
+    .content{
+      padding: 2rem;
+
+      h3{
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
 
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
+@media (max-width: 1128px) {
+  #about{
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+      margin: auto;
+      width: 60%;
+    }
+  }
+
+  #details .box-container{
+    flex-flow: column;
+  }
+  .environment{
+    flex-wrap: wrap;
+
+    
+    .swiper {
+      width: 32rem;
+      height: 32rem;
+    }
+  }
+}
 
 @media (max-width:736px) {
   header .container .menu{
@@ -272,19 +329,5 @@ header{
   }
   #menu-btn{
     display: inline-block; //visibility não funciona
-  }
-
-  #about{
-    display: flex;
-    flex-wrap: wrap;
-
-    img{
-      margin: auto;
-      width: 60%;
-    }
-  }
-
-  #details .box-container{
-    flex-flow: column;
   }
 }
