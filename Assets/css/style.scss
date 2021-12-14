@@ -32,6 +32,7 @@ $base-color-secundary: orange;
 $text-light: rgb(233, 233, 233);
 $text-dark: rgb(44, 44, 44);
 $background-section: #9f6fe7;
+$title-details: orange;
 
 /***************************************************/
 /**                  Base                        **/
@@ -61,6 +62,11 @@ h2{
   color: $text-light;
   text-shadow: black 0.1rem 0.1rem 0.1rem;
   margin-bottom: 3rem;
+}
+
+h3{
+  font-size: 2.5rem;
+  color: $text-light;
 }
 
 
@@ -184,20 +190,52 @@ header{
   }
 }
 
+
+/**********************************************/
+/**                  Details                   **/
+/********************************************/
+
 #details{
-  background: #5414b3;
-
-  .container{
+  background: chocolate;
+  .box-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    div{
-      height: 4rem;
-      border: 1px solid orange;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+    
+    .box{
       background: $text-light;
+      border: 1.5px solid $base-color-secundary;
+  
+      &:hover .image img{
+        transform: scale(1.1);
+      }
     }
-  }
+  
+  
+    .image{
+      height: 30rem;
+      width: 100%;
+      overflow: hidden;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .content{
+      text-align: center;
+      h3{
+        color: $title-details;
+      }
+      p{
+        padding: .5rem;
+      }
+    }
+  }  
 }
+
+
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
@@ -232,5 +270,9 @@ header{
       margin: auto;
       width: 60%;
     }
+  }
+
+  #details .box-container{
+    flex-flow: column;
   }
 }
