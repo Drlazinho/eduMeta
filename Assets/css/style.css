@@ -166,9 +166,9 @@ header .container .menu a:hover {
 }
 
 /**********************************************/
-/**                  About                   **/
+/**                  Idea                   **/
 /********************************************/
-#about {
+#idea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,19 +181,32 @@ header .container .menu a:hover {
   gap: 5rem;
 }
 
-#about .content {
+#idea .content {
   text-align: justify;
 }
 
-#about img {
+#idea img {
   text-align: center;
   -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
           clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
   width: 40%;
 }
 
-#example {
-  background: chocolate;
+#details {
+  background: #5414b3;
+}
+
+#details .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#details .container div {
+  height: 4rem;
+  border: 1px solid orange;
+  background: #e9e9e9;
 }
 
 /*******************************/

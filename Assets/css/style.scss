@@ -31,6 +31,7 @@ $base-color-primary: #5414b3;
 $base-color-secundary: orange;
 $text-light: rgb(233, 233, 233);
 $text-dark: rgb(44, 44, 44);
+$background-section: #9f6fe7;
 
 /***************************************************/
 /**                  Base                        **/
@@ -163,10 +164,10 @@ header{
 }
 
 /**********************************************/
-/**                  About                   **/
+/**                  Idea                   **/
 /********************************************/
 
-#about{
+#idea{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,11 +184,20 @@ header{
   }
 }
 
+#details{
+  background: #5414b3;
 
-#example{
-  background: chocolate;
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div{
+      height: 4rem;
+      border: 1px solid orange;
+      background: $text-light;
+    }
+  }
 }
-
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
