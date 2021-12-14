@@ -33,6 +33,8 @@ $text-light: rgb(233, 233, 233);
 $text-dark: rgb(44, 44, 44);
 $background-section: #9f6fe7;
 $title-details: orange;
+$title-span-purple: #5414b3;
+$title-span-orange: orange;
 
 /***************************************************/
 /**                  Base                        **/
@@ -196,15 +198,20 @@ header{
 /********************************************/
 
 #details{
-  background: chocolate;
+  background: $base-color-secundary;
+  span{
+    color: $title-span-purple;
+  }
+
   .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
     
     .box{
+      border-radius: 4rem;
       background: $text-light;
-      border: 1.5px solid $base-color-secundary;
+      border: 2.5px solid $base-color-secundary;
   
       &:hover .image img{
         transform: scale(1.1);
@@ -215,6 +222,7 @@ header{
     .image{
       height: 30rem;
       width: 100%;
+      border-radius: 3rem;
       overflow: hidden;
     }
     img{
@@ -226,10 +234,14 @@ header{
     .content{
       text-align: center;
       h3{
+        border-bottom: solid $title-span-purple 4px;
+        border-radius: 10px;
+        margin: 0 5rem;
+        padding-top: 2rem;
         color: $title-details;
       }
       p{
-        padding: .5rem;
+        padding: 2.5rem 2rem;
       }
     }
   }  

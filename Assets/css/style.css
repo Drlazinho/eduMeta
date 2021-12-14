@@ -201,7 +201,11 @@ header .container .menu a:hover {
 /**                  Details                   **/
 /********************************************/
 #details {
-  background: chocolate;
+  background: orange;
+}
+
+#details span {
+  color: #5414b3;
 }
 
 #details .box-container {
@@ -213,8 +217,9 @@ header .container .menu a:hover {
 }
 
 #details .box-container .box {
+  border-radius: 4rem;
   background: #e9e9e9;
-  border: 1.5px solid orange;
+  border: 2.5px solid orange;
 }
 
 #details .box-container .box:hover .image img {
@@ -225,6 +230,7 @@ header .container .menu a:hover {
 #details .box-container .image {
   height: 30rem;
   width: 100%;
+  border-radius: 3rem;
   overflow: hidden;
 }
 
@@ -240,11 +246,15 @@ header .container .menu a:hover {
 }
 
 #details .box-container .content h3 {
+  border-bottom: solid #5414b3 4px;
+  border-radius: 10px;
+  margin: 0 5rem;
+  padding-top: 2rem;
   color: orange;
 }
 
 #details .box-container .content p {
-  padding: .5rem;
+  padding: 2.5rem 2rem;
 }
 
 /*******************************/
