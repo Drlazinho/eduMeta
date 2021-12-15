@@ -54,12 +54,10 @@ span{
 }
 
 section {
-  padding: 2rem 2.5rem;
-  padding-top: 7.5rem;
+  padding: 7.5rem 2.5rem;
 }
 
-
-h2{
+.title{
   font-size: 3rem;
   color: $text-light;
   text-shadow: black 0.1rem 0.1rem 0.1rem;
@@ -70,7 +68,6 @@ h3{
   font-size: 2.5rem;
   color: $text-light;
 }
-
 
 p{
   font-size: 2rem;
@@ -90,7 +87,7 @@ header{
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 2;
 
   .container{
     display: flex;
@@ -178,15 +175,16 @@ header{
 #idea{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 5rem;
-
+  border-bottom: 3px solid $base-color-primary;
+  
+  
   .content{
     text-align: justify;
   }
 
   img{
-    text-align: center;
+    object-fit: cover;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     width: 40%;
   }
@@ -199,6 +197,11 @@ header{
 
 #details{
   background: $base-color-secundary;
+
+  .title{
+    text-align: center;
+  }
+
   span{
     color: $title-span-purple;
   }
@@ -246,19 +249,20 @@ header{
     }
   }
   
+  // Ambiente de Desenvolvimento
   .environment{
     background: $background-section;
     margin: 2rem 0;
-    padding: 2rem 6rem;
+    padding: 3rem 2rem;
     display: flex;
     border-radius: 1.5rem;
     text-align: center;
+    align-items: center;
     gap: 4rem;
 
-    .swiper {
-      padding: 2rem;
-      width: 30rem;
-      height: 30rem;
+    .swiper{
+      width: 20rem;
+      height: 20rem;
     }
 
     .swiper-slide {
@@ -266,13 +270,7 @@ header{
       background-size: cover !important;
     }
 
-    .swiper-slide img {
-      width: 100%;
-    }
-
     .content{
-      padding: 2rem;
-
       h3{
         margin-bottom: 2rem;
       }
@@ -285,9 +283,13 @@ header{
 /**   Layout Responsive      **/
 /******************************/
 @media (max-width: 1128px) {
-  #about{
+  #idea{
     display: flex;
     flex-wrap: wrap;
+
+    .content > h2 {
+      text-align: center;
+    }
 
     img{
       margin: auto;
@@ -298,14 +300,9 @@ header{
   #details .box-container{
     flex-flow: column;
   }
+
   .environment{
     flex-wrap: wrap;
-
-    
-    .swiper {
-      width: 32rem;
-      height: 32rem;
-    }
   }
 }
 
@@ -327,6 +324,11 @@ header{
       display: block;
     }
   }
+
+  .environment {
+    padding: 2rem 0;
+  }
+
   #menu-btn{
     display: inline-block; //visibility não funciona
   }
