@@ -73,8 +73,8 @@ p {
 header {
   font-size: 2rem;
   background: #5414b3;
-  -webkit-box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   height: 7rem;
   width: 100vw;
   position: fixed;
@@ -140,7 +140,7 @@ header .container .menu a:hover {
 }
 
 .home .slide {
-  min-height: 70vh;
+  min-height: 90vh;
   background-size: cover !important;
   background-position: center !important;
   display: -webkit-box;
@@ -158,7 +158,7 @@ header .container .menu a:hover {
 }
 
 .home .slide .content .phrase {
-  font-size: 4rem;
+  font-size: 8rem;
   color: #e9e9e9;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -218,13 +218,14 @@ header .container .menu a:hover {
   display: grid;
   -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 #details .box-container .box {
   border-radius: 4rem;
   background: #e9e9e9;
-  border: 2.5px solid orange;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 #details .box-container .box:hover .image img {
@@ -263,7 +264,7 @@ header .container .menu a:hover {
 
 #details .environment {
   background: #9f6fe7;
-  margin: 2rem 0;
+  margin-top: 8rem;
   padding: 3rem 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +274,8 @@ header .container .menu a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   gap: 4rem;
 }
 
@@ -297,6 +300,10 @@ header .container .menu a:hover {
 /**********************************************/
 /**                  Target                 **/
 /********************************************/
+#target .title {
+  text-align: center;
+}
+
 #target .box-container {
   display: -ms-grid;
   display: grid;
@@ -314,36 +321,50 @@ header .container .menu a:hover {
           transform: scale(1.1);
 }
 
-#target .box-container .image {
+#target .box-container .box .image {
   height: 30rem;
   overflow: hidden;
 }
 
-#target .box-container img {
+#target .box-container .box img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#target .box-container .content {
+#target .box-container .box .content {
   text-align: center;
 }
 
-#target .box-container .content h3 {
+#target .box-container .box .content h3 {
   margin: 0 5rem;
   padding-top: 2rem;
   color: #5414b3;
 }
 
-#target .box-container .content p {
+#target .box-container .box .content p {
   padding: 2.5rem 2rem;
+}
+
+footer {
+  background: #5414b3;
+  color: #e9e9e9;
+  padding: .5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
 @media (max-width: 1128px) {
+  .home .slide .content .phrase {
+    font-size: 6rem;
+  }
   #idea {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,8 +417,14 @@ header .container .menu a:hover {
   header .container .menu a {
     display: block;
   }
+  #home .content {
+    padding: 0 2rem;
+  }
+  #home .content .phrase {
+    font-size: 4rem;
+  }
   .environment .swiper {
-    width: 25rem !important;
+    width: 20rem !important;
     height: 20rem !important;
   }
   .environment .content {

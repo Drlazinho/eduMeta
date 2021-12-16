@@ -83,7 +83,7 @@ p {
 header {
   font-size: 2rem;
   background: $base-color-primary;
-  box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   height: 7rem;
   width: 100vw;
   position: fixed;
@@ -141,7 +141,7 @@ header {
   padding-top: 7rem;
 
   .slide {
-    min-height: 70vh;
+    min-height: 90vh;
     background-size: cover !important;
     background-position: center !important;
     display: flex;
@@ -153,7 +153,7 @@ header {
       padding-left: 5rem;
 
       .phrase {
-        font-size: 4rem;
+        font-size: 8rem;
         color: $text-light;
         text-shadow: black 0.1em 0.1em 0.2em;
       }
@@ -208,12 +208,13 @@ header {
   .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
+    gap: 2.5rem;
 
     .box {
       border-radius: 4rem;
       background: $text-light;
-      border: 2.5px solid $base-color-secundary;
+      box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+
 
       &:hover .image img {
         transform: scale(1.1);
@@ -249,12 +250,13 @@ header {
   // Ambiente de Desenvolvimento
   .environment {
     background: $background-section;
-    margin: 2rem 0;
+    margin-top: 8rem;
     padding: 3rem 6rem;
     display: flex;
     border-radius: 1.5rem;
     text-align: center;
     align-items: center;
+    box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
     gap: 4rem;
 
     .swiper {
@@ -279,6 +281,10 @@ header {
 /**                  Target                 **/
 /********************************************/
 #target {
+  .title{
+    text-align: center;
+  }
+
   .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -290,35 +296,51 @@ header {
       &:hover .image img {
         transform: scale(1.1);
       }
-    }
-
-    .image {
-      height: 30rem;
-      overflow: hidden;
-    }
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .content {
-      text-align: center;
-      h3 {
-        margin: 0 5rem;
-        padding-top: 2rem;
-        color: $base-color-primary;
+      .image {
+        height: 30rem;
+        overflow: hidden;
       }
-      p {
-        padding: 2.5rem 2rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      .content {
+        text-align: center;
+        h3 {
+          margin: 0 5rem;
+          padding-top: 2rem;
+          color: $base-color-primary;
+        }
+        p {
+          padding: 2.5rem 2rem;
+        }
       }
     }
   }
 }
+
+// Footer
+footer{
+  background: $base-color-primary;
+  color: $text-light;
+  padding: .5rem;
+
+  p{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
 @media (max-width: 1128px) {
+  .home .slide .content .phrase{
+    font-size: 6rem;
+  }
+
   #idea {
     display: flex;
     flex-wrap: wrap;
@@ -373,9 +395,19 @@ header {
     }
   }
 
+  #home{
+    .content{
+      padding: 0 2rem;
+
+      .phrase{
+        font-size: 4rem;
+      }
+    };
+  }
+
   .environment {
     .swiper {
-      width: 25rem !important;
+      width: 20rem !important;
       height: 20rem !important;
     }
 
