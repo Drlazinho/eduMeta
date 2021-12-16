@@ -7,8 +7,8 @@
   text-decoration: none;
   outline: none;
   border: none;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 li {
@@ -35,6 +35,9 @@ html {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   font-family: Poppins, sans-serif;
   background: #9f6fe7;
 }
@@ -231,7 +234,6 @@ header .container .menu a:hover {
 
 #details .box-container .image {
   height: 30rem;
-  width: 100%;
   border-radius: 3rem;
   overflow: hidden;
 }
@@ -262,7 +264,7 @@ header .container .menu a:hover {
 #details .environment {
   background: #9f6fe7;
   margin: 2rem 0;
-  padding: 3rem 2rem;
+  padding: 3rem 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,17 +277,67 @@ header .container .menu a:hover {
 }
 
 #details .environment .swiper {
-  width: 20rem;
-  height: 20rem;
+  width: 35rem;
+  height: 35rem;
 }
 
 #details .environment .swiper-slide {
-  background-position: center  !important;
+  background-position: center !important;
   background-size: cover !important;
+}
+
+#details .environment .content {
+  padding: 0 2rem;
 }
 
 #details .environment .content h3 {
   margin-bottom: 2rem;
+}
+
+/**********************************************/
+/**                  Target                 **/
+/********************************************/
+#target .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+#target .box-container .box {
+  border: 1px solid #b69d6d;
+  background: orange;
+}
+
+#target .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#target .box-container .image {
+  height: 30rem;
+  overflow: hidden;
+}
+
+#target .box-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#target .box-container .content {
+  text-align: center;
+}
+
+#target .box-container .content h3 {
+  margin: 0 5rem;
+  padding-top: 2rem;
+  color: #5414b3;
+}
+
+#target .box-container .content p {
+  padding: 2.5rem 2rem;
 }
 
 /*******************************/
@@ -306,19 +358,27 @@ header .container .menu a:hover {
     margin: auto;
     width: 60%;
   }
-  #details .box-container {
+  #details .box-container, #target .box-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .environment {
+  #details .environment, #target .environment {
+    padding: 3rem 2rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #details .environment .swiper, #target .environment .swiper {
+    width: 50rem;
+    height: 30rem;
   }
 }
 
 @media (max-width: 736px) {
+  p {
+    font-size: 1.7rem;
+  }
   header .container .menu {
     position: absolute;
     display: list-item;
@@ -336,8 +396,15 @@ header .container .menu a:hover {
   header .container .menu a {
     display: block;
   }
-  .environment {
-    padding: 2rem 0;
+  .environment .swiper {
+    width: 25rem !important;
+    height: 20rem !important;
+  }
+  .environment .content {
+    padding: 0;
+  }
+  .environment .content p {
+    text-align: justify;
   }
   #menu-btn {
     display: inline-block;

@@ -1,24 +1,24 @@
 /***************************************************/
 /**                  Reset                        **/
 /***************************************************/
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   outline: none;
   border: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   width: 100%;
   height: auto;
 }
@@ -40,15 +40,18 @@ $title-span-orange: orange;
 /**                  Base                        **/
 /***************************************************/
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+body {
   font-family: Poppins, sans-serif;
   background: #9f6fe7;
 }
 
-span{
+span {
   font-weight: bold;
   color: $base-color-secundary;
 }
@@ -57,31 +60,30 @@ section {
   padding: 7.5rem 2.5rem;
 }
 
-.title{
+.title {
   font-size: 3rem;
   color: $text-light;
   text-shadow: black 0.1rem 0.1rem 0.1rem;
   margin-bottom: 3rem;
 }
 
-h3{
+h3 {
   font-size: 2.5rem;
   color: $text-light;
 }
 
-p{
+p {
   font-size: 2rem;
 }
-
 
 /***************************************************/
 /**                  Navigation                   **/
 /***************************************************/
 
-header{
+header {
   font-size: 2rem;
   background: $base-color-primary;
-  box-shadow: 0 0.5rem .5rem .2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   height: 7rem;
   width: 100vw;
   position: fixed;
@@ -89,28 +91,28 @@ header{
   bottom: 0;
   z-index: 2;
 
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
 
-    .logo{
+    .logo {
       color: $text-light;
-      
-      span{
+
+      span {
         font-size: 3rem;
       }
     }
 
-    .menu{
+    .menu {
       display: flex;
 
-      a{
+      a {
         color: $text-light;
         padding: 2rem;
 
-        &:hover{
+        &:hover {
           color: $text-dark;
           background-color: $base-color-secundary;
         }
@@ -119,51 +121,50 @@ header{
   }
 }
 
-#menu-btn{
+#menu-btn {
   display: none;
   color: $text-light;
   font-size: 3rem;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: $base-color-secundary;
   }
 }
-
 
 /**********************************************/
 /**                  Home                   **/
 /********************************************/
 
-.home{
-  padding:0;
+.home {
+  padding: 0;
   padding-top: 7rem;
 
-  .slide{
+  .slide {
     min-height: 70vh;
     background-size: cover !important;
     background-position: center !important;
     display: flex;
     align-items: center;
 
-    .content{
+    .content {
       padding: 2rem;
       width: 60rem;
       padding-left: 5rem;
 
-      .phrase{
+      .phrase {
         font-size: 4rem;
         color: $text-light;
-        text-shadow: black 0.1em 0.1em 0.2em
+        text-shadow: black 0.1em 0.1em 0.2em;
       }
     }
   }
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   height: 2rem;
   width: 2rem;
 
-  &.swiper-pagination-bullet-active{
+  &.swiper-pagination-bullet-active {
     background: $base-color-secundary;
   }
 }
@@ -172,118 +173,153 @@ header{
 /**                  Idea                   **/
 /********************************************/
 
-#idea{
+#idea {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
   border-bottom: 3px solid $base-color-primary;
-  
-  
-  .content{
+
+  .content {
     text-align: justify;
   }
 
-  img{
+  img {
     object-fit: cover;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     width: 40%;
   }
 }
 
-
 /**********************************************/
 /**                  Details                   **/
 /********************************************/
 
-#details{
+#details {
   background: $base-color-secundary;
 
-  .title{
+  .title {
     text-align: center;
   }
 
-  span{
+  span {
     color: $title-span-purple;
   }
 
-  .box-container{
+  .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
-    
-    .box{
+
+    .box {
       border-radius: 4rem;
       background: $text-light;
       border: 2.5px solid $base-color-secundary;
-  
-      &:hover .image img{
+
+      &:hover .image img {
         transform: scale(1.1);
       }
     }
-  
-  
-    .image{
+
+    .image {
       height: 30rem;
-      width: 100%;
       border-radius: 3rem;
       overflow: hidden;
     }
-    img{
+    img {
       height: 100%;
       width: 100%;
       object-fit: cover;
     }
-  
-    .content{
+
+    .content {
       text-align: center;
-      h3{
+      h3 {
         border-bottom: solid $title-span-purple 4px;
         border-radius: 10px;
         margin: 0 5rem;
         padding-top: 2rem;
         color: $title-details;
       }
-      p{
+      p {
         padding: 2.5rem 2rem;
       }
     }
   }
-  
+
   // Ambiente de Desenvolvimento
-  .environment{
+  .environment {
     background: $background-section;
     margin: 2rem 0;
-    padding: 3rem 2rem;
+    padding: 3rem 6rem;
     display: flex;
     border-radius: 1.5rem;
     text-align: center;
     align-items: center;
     gap: 4rem;
 
-    .swiper{
-      width: 20rem;
-      height: 20rem;
+    .swiper {
+      width: 35rem;
+      height: 35rem;
     }
 
     .swiper-slide {
-      background-position: center  !important;
+      background-position: center !important;
       background-size: cover !important;
     }
 
-    .content{
-      h3{
+    .content {
+      padding: 0 2rem;
+      h3 {
         margin-bottom: 2rem;
       }
     }
   }
 }
+/**********************************************/
+/**                  Target                 **/
+/********************************************/
+#target {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 
+    .box {
+      border: 1px solid rgb(182, 157, 109);
+      background: $base-color-secundary;
 
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+    }
+
+    .image {
+      height: 30rem;
+      overflow: hidden;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      text-align: center;
+      h3 {
+        margin: 0 5rem;
+        padding-top: 2rem;
+        color: $base-color-primary;
+      }
+      p {
+        padding: 2.5rem 2rem;
+      }
+    }
+  }
+}
 /*******************************/
 /**   Layout Responsive      **/
 /******************************/
 @media (max-width: 1128px) {
-  #idea{
+  #idea {
     display: flex;
     flex-wrap: wrap;
 
@@ -291,23 +327,35 @@ header{
       text-align: center;
     }
 
-    img{
+    img {
       margin: auto;
       width: 60%;
     }
   }
 
-  #details .box-container{
-    flex-flow: column;
-  }
+  #details, #target {
+    .box-container {
+      flex-flow: column;
+    }
 
-  .environment{
-    flex-wrap: wrap;
+    .environment {
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+
+      .swiper {
+        width: 50rem;
+        height: 30rem;
+      }
+    }
   }
 }
 
-@media (max-width:736px) {
-  header .container .menu{
+@media (max-width: 736px) {
+  p {
+    font-size: 1.7rem;
+  }
+
+  header .container .menu {
     position: absolute;
     display: list-item;
     top: 99%;
@@ -326,10 +374,20 @@ header{
   }
 
   .environment {
-    padding: 2rem 0;
+    .swiper {
+      width: 25rem !important;
+      height: 20rem !important;
+    }
+
+    .content {
+      padding: 0;
+      p {
+        text-align: justify;
+      }
+    }
   }
 
-  #menu-btn{
+  #menu-btn {
     display: inline-block; //visibility não funciona
   }
 }
