@@ -34,9 +34,8 @@ Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade au
 - [X] Construir uma Section Home usando o Swiper.js com Responsividade.
 - [X] Construir uma Section que descreve a proposta do Projeto com Responsividade. 
 - [X] Construir uma Section que dar detalhes da proposta com Responsividade. 
-- [ ] Construir uma Section que expande a ideia da proposta com Responsividade.
-- [ ] Construir uma Section de Contatos com Responsividade.
-- [ ] Construir um Footer de CopyRight.
+- [X] Construir uma Section que expande a ideia da proposta com Responsividade.
+- [X] Construir um Footer de CopyRight.
 - [ ] Revisão e Manutenção do Site e Contextualização.
 - [ ] Site Finalizado!
 
