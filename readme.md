@@ -39,6 +39,13 @@ Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade au
 - [X] Revisão e Manutenção do Site e Contextualização.
 - [X] Site Finalizado!
 
+<hr>
+
+**Resultado**
+
+Link de acesso: https://edumeta.netlify.app/
+
+<img src="./Assets/img/landing_page.png" width="50%">
 
 **Data de ínicio de desenvolvimento - 09/12/2021**<br>
 **Data de Termínio do desenvolvimento - 17/12/2021 - 13:42**<br>
