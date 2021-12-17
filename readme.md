@@ -40,6 +40,6 @@ Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade au
 - [X] Site Finalizado!
 
 
-**Data de ínicio de desenvolvimento - 09/12/2021**
-**Data de Termínio do desenvolvimento - 17/12/2021 - 13:42**
+**Data de ínicio de desenvolvimento - 09/12/2021**<br>
+**Data de Termínio do desenvolvimento - 17/12/2021 - 13:42**<br>
 **Data para entrega do Desafio até o dia 19/12/2021!**
