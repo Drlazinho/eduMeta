@@ -25,6 +25,8 @@ Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade au
 * Javascript;
 * Swiper.js;
 * Conceitos de Responsividade, Acessiblidade, Usabilidade e Semântica;
+* Bancos de Images - Unsplash e Freepik
+* Imagens redimensionadas no Figma, na tentativa de melhorar a performance em mobile. (As imagens vieram com dimensão 4k-8k 😲, desnecessário)
 * [...]
 
 <hr>
