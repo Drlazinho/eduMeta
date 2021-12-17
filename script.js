@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper", {
     shadow: true,
     slideShadows: true,
     shadowOffset: 20,
-    shadowScale: 0.94,
+    shadowScale: 0.74,
   },
   autoplay: {
     delay: 0,

@@ -191,15 +191,12 @@ header {
 }
 
 .banner{
-  background: linear-gradient(rgba(101, 74, 101, 0rgba(91, 37, 93, 0.7)0,.7)), url(../img/banner-2.jpg) no-repeat;
+  background: linear-gradient(rgba(101, 74, 101, 0rgba(91, 37, 93, 0.7)0,.7)), url(../img/banner-1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   text-align: center;
   color: $text-light;
-  h3{
-    padding: 0 5rem;
-  }
 }
 /**********************************************/
 /**                  Details                   **/
@@ -225,7 +222,6 @@ header {
       border-radius: 4rem;
       background: $text-light;
       box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
-
 
       &:hover .image img {
         transform: scale(1.1);
