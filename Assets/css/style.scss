@@ -190,6 +190,17 @@ header {
   }
 }
 
+.banner{
+  background: linear-gradient(rgba(101, 74, 101, 0rgba(91, 37, 93, 0.7)0,.7)), url(../img/banner-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: $text-light;
+  h3{
+    padding: 0 5rem;
+  }
+}
 /**********************************************/
 /**                  Details                   **/
 /********************************************/
@@ -421,8 +432,8 @@ footer{
 
   .environment {
     .swiper {
-      width: 20rem !important;
-      height: 20rem !important;
+      width: 18rem !important;
+      height: 18rem !important;
     }
 
     .content {
