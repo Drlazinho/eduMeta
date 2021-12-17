@@ -31,8 +31,8 @@ $base-color-primary: #5414b3;
 $base-color-secundary: orange;
 $text-light: rgb(233, 233, 233);
 $text-dark: rgb(44, 44, 44);
-$background-section: #9f6fe7;
-$title-details: orange;
+$background-section: #b084f1;
+$title-details: rgb(211, 137, 0);
 $title-span-purple: #5414b3;
 $title-span-orange: orange;
 
@@ -240,6 +240,7 @@ header {
         margin: 0 5rem;
         padding-top: 2rem;
         color: $title-details;
+        text-shadow: .1rem .1rem #000;
       }
       p {
         padding: 2.5rem 2rem;
@@ -373,6 +374,10 @@ footer{
 }
 
 @media (max-width: 736px) {
+  section{
+    padding: auto 1.5rem;
+  }
+
   p {
     font-size: 1.7rem;
   }
@@ -403,6 +408,15 @@ footer{
         font-size: 4rem;
       }
     };
+    .swiper-pagination-bullet {
+      border-radius: 0;
+    }
+  }
+
+  #target, #details{
+    .box-container{
+      grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    }
   }
 
   .environment {
@@ -421,5 +435,11 @@ footer{
 
   #menu-btn {
     display: inline-block; //visibility não funciona
+  }
+}
+
+@media (max-width: 320px) {
+  html{
+    font-size: 45%;
   }
 }
