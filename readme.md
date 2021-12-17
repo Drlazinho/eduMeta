@@ -36,7 +36,10 @@ Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade au
 - [X] Construir uma Section que dar detalhes da proposta com Responsividade. 
 - [X] Construir uma Section que expande a ideia da proposta com Responsividade.
 - [X] Construir um Footer de CopyRight.
-- [ ] Revisão e Manutenção do Site e Contextualização.
-- [ ] Site Finalizado!
+- [X] Revisão e Manutenção do Site e Contextualização.
+- [X] Site Finalizado!
 
+
+**Data de ínicio de desenvolvimento - 09/12/2021**
+**Data de Termínio do desenvolvimento - 17/12/2021 - 13:42**
 **Data para entrega do Desafio até o dia 19/12/2021!**
