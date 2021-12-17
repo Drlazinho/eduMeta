@@ -5,7 +5,7 @@ Desenvolvendo um site usando em HTML/CSS/JavaScript. Para a entrega do Desafio p
 ***"Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando a tecnologia?"***
 
 ### Solução do Desafio
-Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade aumentanda/virtual com objetivo de expandir o acesso como também inovar a forma de aprender. Mais detalhes no site.
+Usa a tecnologia do Metaverso para desenvolver e criar ambientes de Realidade aumentanda/virtual com objetivo de expandir o acesso como também inovar a forma de aprendizagem. Mais detalhes no <a href="https://edumeta.netlify.app/">site</a>.
 <hr>
 
 ### Requisitos
