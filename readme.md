@@ -1,4 +1,4 @@
-## Site eduMeta - Educação no Metaverso.
+# Site eduMeta - Educação no Metaverso.
 
 Desenvolvendo um site usando em HTML/CSS/JavaScript. Para a entrega do Desafio proposto pela RocketSeat DoWhile 2021, em que consiste criar uma landing page com o seguinte objetivo.
 
